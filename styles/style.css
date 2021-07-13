@@ -1,0 +1,123 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* basic utility */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 0;
+}
+.nav-item ul{
+    display: flex;
+}
+.nav-item ul li{
+    list-style: none;
+    margin-right: 36px;
+}
+.nav-item ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.linked-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 5px;
+    margin-top: 3%;
+}
+.header-bg{
+    background-color: #2D25A0;
+    width: 100%;
+}
+.heading{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2%;
+}
+.header-items-1{
+    margin-left: 6%;
+}
+.header-items-1 > h1{
+    font-size: 64px;
+    color: #FFFFFF;
+}
+.header-items-2 > img{
+    width: 556px;
+    height: 438px;
+}
+
+
+.players{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 10%;
+    margin-top: 3%;
+}
+.player{
+    width: 330px;
+    box-shadow: 2px 2px 100px #F2F2F2;
+    padding: 15px;
+    overflow: hidden;
+    margin: 3%;
+}
+.player > h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+.player > p{
+    font-size: 16px;
+    font-weight: normal;
+    color: #6C6C6C;
+}
+.player > img{
+    width: 300px;
+    height: 256px;
+    margin: 15px;
+}
+
+.highlight{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.highlight-item{
+    width: 40%;
+}
+.highlight-item > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.highlight-item > h1{
+    color: black;
+    font-weight: 700;
+    font-size: 60px;
+}
+.highlight-item > p{
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+.footer{
+    margin: 4% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-item{
+    width: 25%;
+    text-align: center;
+}
+.footer-item > img{
+    width: 100%;
+    height: 100%;
+}
