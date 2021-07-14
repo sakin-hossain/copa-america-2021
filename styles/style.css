@@ -33,6 +33,11 @@ body{
     border-radius: 5px;
     margin-top: 3%;
 }
+.linked-btn:hover{
+    background-color: #E02C1A;
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.1);
+}
 .header-bg{
     background-color: #2D25A0;
     width: 100%;
@@ -53,7 +58,10 @@ body{
     width: 556px;
     height: 438px;
 }
-
+.header-items-2 > img:hover{
+    transform: scale(1.2);
+    transition: 0.75s all ease-in-out;
+}
 
 .players{
     width: 80%;
@@ -64,7 +72,7 @@ body{
 }
 .player{
     width: 330px;
-    box-shadow: 0px 0px 100px #F2F2F2;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
     padding: 15px;
     overflow: hidden;
     margin: 3%;
@@ -131,15 +139,20 @@ fieldset{
     font-size: 35px;
 }
 .voting input[type=submit]{
-    background-image: linear-gradient(rgb(114, 140, 150), cyan);
-    padding: 10px 24px;
-    border: none;
-    color: white;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
     font-weight: 700;
-    font-size: 18x;
+    background-color: #E02C6D;
+    padding: 10px 24px;
     border-radius: 5px;
+    margin-top: 3%;
+    border: none;
 }
-
+.voting input[type=submit]:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+}
 .blogs{
     margin: 10% 0;
     padding: 5% 0;
