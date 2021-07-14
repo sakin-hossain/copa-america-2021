@@ -247,18 +247,6 @@ fieldset{
     .nav-item-1{
         display: none;
     }
-
-    .players{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 10%;
-        margin-top: 3%;
-    }
-    .player{
-        margin: 12px 7.5px;
-    }
     .heading{
         display: flex;
         flex-direction: column;
@@ -275,6 +263,18 @@ fieldset{
     .header-items-2 > img{
         width: 329px;
         height: 269px;
+        margin: 0 15px;
+    }
+    .players{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10%;
+        margin-top: 3%;
+    }
+    .player{
+        margin: 12px 7.5px;
     }
     .highlight{
         margin-top: 5%;
