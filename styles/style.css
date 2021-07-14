@@ -64,7 +64,7 @@ body{
 }
 .player{
     width: 330px;
-    box-shadow: 2px 2px 100px #F2F2F2;
+    box-shadow: 0px 0px 100px #F2F2F2;
     padding: 15px;
     overflow: hidden;
     margin: 3%;
@@ -106,6 +106,61 @@ body{
     color: #6C6C6C;
     font-size: 16px;
 }
+fieldset{
+    background-color: #2D25A0;
+    width: 60%;
+    margin: 5% 20%;
+    box-shadow: 2px 2px 100px #F2F2F2;
+    border-radius: 2%;
+}
+.voting{
+    text-align: center;
+}
+.voting label{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+.voting{
+    font-size: 35px;
+    font-weight: 700;
+}
+.voting legend{
+    color: tomato;
+    text-shadow: 2px 2px #ff0000;
+    font-size: 35px;
+}
+.voting input[type=submit]{
+    background-image: linear-gradient(rgb(114, 140, 150), cyan);
+    padding: 10px 24px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 18x;
+    border-radius: 5px;
+}
+
+.blogs{
+    margin: 10% 0;
+    padding: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 100px #E8E8E8;
+}
+.blog{
+    width: 30%; 
+    margin: 0 5%;
+    padding: 15px;
+    box-shadow: 10px 10px 40px grey;
+
+}
+.blog img{
+    width: 100%;
+}
+.blog h3{
+    text-align: center;
+    color: #6C6C6C;
+}
 
 .footer{
     margin: 4% 0;
@@ -117,7 +172,36 @@ body{
     width: 25%;
     text-align: center;
 }
+.fa{
+    font-size: 20px;
+    width: 20px;
+    padding: 3%;
+    margin: 0 3%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-youtube{
+    background: #C94444;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram{
+    background: #4178A0;
+    color: white;
+}
 .footer-item > img{
     width: 100%;
     height: 100%;
+}
+.footer-item > p{
+    font-size: 18px;
+    color: #000000;
 }
