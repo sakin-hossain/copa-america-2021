@@ -1,0 +1,113 @@
+/************ 
+/   Navbar   /
+***********/
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .responsive-bar{
+        display: inline-block;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+    #check{
+        display: none;
+    }
+    .nav-item-1{
+        display: none;
+    }
+    .nav-item-2{
+        margin-right: 15px;
+    }
+/******************* 
+/   Header Style   /
+ ******************/
+    .heading{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2%;
+    }
+    .header-items-1{
+        margin-left: 6%;
+        margin-bottom: 6%;
+    }
+    .header-items-1 > h1{
+        font-size: 64px;
+        color: #FFFFFF;
+    }
+    .header-items-2 > img{
+        width: 329px;
+        height: 269px;
+        margin: 0 15px;
+    }
+/******************** 
+/   Players Style   /
+ *******************/
+    .players{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10%;
+        margin-top: 3%;
+    }
+    .player{
+        margin: 12px 7.5px;
+    }
+/*********************** 
+/   Highlight Style   /
+ *********************/
+    .highlight{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .highlight-item{
+        width: 100%;
+        margin-left: 12px;
+    }
+    .highlight-item > img{
+        width: 328px;
+        height: 248px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .highlight-item > h1{
+        color: #0A0826;
+        font-weight: 700;
+        font-size: 30px;
+    }
+/********************* 
+/   Voting Section   /
+ ********************/
+    fieldset{
+        width: 80%;
+        margin: 10px;
+    }
+/********************* 
+/    Blog Style      /
+ ********************/
+    .blogs{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog{
+        width: 300px;
+        margin: 10px 20px;
+    }
+/********************* 
+/   Footer Style     /
+ ********************/
+    .footer{
+        margin: 4% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-item{
+        width: 60%;
+        text-align: center;
+    }
+}

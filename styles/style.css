@@ -10,6 +10,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    padding: 0;
 }
 .header-bg{
     background-color: #2D25A0;
@@ -21,7 +22,7 @@ body{
 .navbar{
     display: flex;
     justify-content: space-around;
-    padding: 3% 0;
+    padding: 50px 0;
 }
 .responsive-bar{
     display: none;
@@ -182,15 +183,15 @@ fieldset input[type=submit]{
 /   Blog Style   /
  ********************/
 .blogs{
-    margin: 10% 0;
-    padding: 5% 0;
+    margin: 5%;
+    padding: 3%;
     display: flex;
     justify-content: space-between;
     box-shadow: 2px 2px 100px #E8E8E8;
 }
 .blog{
-    width: 30%; 
-    margin: 0 5%;
+    width: 40%; 
+    margin: 5%;
     padding: 15px;
     box-shadow: 10px 10px 40px grey;
 
@@ -206,13 +207,12 @@ fieldset input[type=submit]{
 /   Footer Style     /
  ********************/
 .footer{
-    margin: 4% 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
 }
 .footer-item{
-    width: 25%;
+    width: 30%;
+    margin: 0 auto;
     text-align: center;
 }
 /************************* 
@@ -252,16 +252,122 @@ fieldset input[type=submit]{
     color: #000000;
 }
 
-
 /********************* 
 /   Media Qureies   /
  ********************/
 
 @media only screen and (max-width:688px) {
-
 /************ 
 /   Navbar   /
 ***********/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.responsive-bar{
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 15px;
+}
+#check{
+    display: none;
+}
+.nav-item-1{
+    display: none;
+}
+.nav-item-2{
+    margin-right: 15px;
+}
+
+
+.heading{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
+}
+.header-items-2{
+    margin-left: 25px;
+}
+.header-items-2 img{
+    width: 329px;
+    height: 259px;
+}
+
+.players{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1 ,1fr);
+}
+
+.player{
+    width: 300px;
+    height: 474px;
+    margin: 24px 15px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.player > img{
+    width: 270px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.highlight{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+}
+.highlight-item{
+    margin-left: 15px;
+    margin-bottom: 35px;
+}
+.highlight-item h1{
+    font-size: 30px;
+    width: 329px;
+}
+.highlight-item p{
+    width: 329px;
+}
+.highlight-item img{
+    width: 380px;
+    height: 248px;
+}
+
+fieldset{
+    margin: 0 auto;
+}
+
+.blogs{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1 ,1fr);   
+}
+
+.blog{
+    width: 300px;
+    height: 474px;
+    margin: 24px 15px;
+}
+.blog img{
+    width: 300px;
+    height: 248px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.footer-item{
+    width: 60%;
+}
+
+@media only screen and (min-width:688px) {
+
+    /************ 
+    /   Navbar   /
+    ***********/
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -282,93 +388,89 @@ fieldset input[type=submit]{
     .nav-item-2{
         margin-right: 15px;
     }
-/******************* 
-/   Header Style   /
- ******************/
+    
+    
     .heading{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 2%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
     }
-    .header-items-1{
-        margin-left: 6%;
-        margin-bottom: 6%;
+    .header-items-2{
+        margin-left: 25px;
     }
-    .header-items-1 > h1{
-        font-size: 64px;
-        color: #FFFFFF;
-    }
-    .header-items-2 > img{
+    .header-items-2 img{
         width: 329px;
-        height: 269px;
-        margin: 0 15px;
+        height: 259px;
     }
-/******************** 
-/   Players Style   /
- *******************/
+    
     .players{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 10%;
-        margin-top: 3%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1 ,1fr);
     }
+    
     .player{
-        margin: 12px 7.5px;
+        width: 300px;
+        height: 474px;
+        margin: 24px 15px;
+        overflow: scroll;
+        overflow-x: hidden;
     }
-/*********************** 
-/   Highlight Style   /
- *********************/
+    
+    .player > img{
+        width: 270px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
     .highlight{
-        margin-top: 5%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
     }
     .highlight-item{
-        width: 100%;
-        margin-left: 12px;
+        margin-left: 15px;
+        margin-bottom: 35px;
     }
-    .highlight-item > img{
-        width: 328px;
-        height: 248px;
-        border-radius: 10px;
-        margin: 10px;
-    }
-    .highlight-item > h1{
-        color: #0A0826;
-        font-weight: 700;
+    .highlight-item h1{
         font-size: 30px;
+        width: 329px;
     }
-/********************* 
-/   Voting Section   /
- ********************/
+    .highlight-item p{
+        width: 329px;
+    }
+    .highlight-item img{
+        width: 380px;
+        height: 248px;
+    }
+    
     fieldset{
-        width: 80%;
-        margin: 10px;
+        margin: 0 auto;
     }
-/********************* 
-/    Blog Style      /
- ********************/
+    
     .blogs{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1 ,1fr);   
     }
+    
     .blog{
         width: 300px;
-        margin: 10px 20px;
+        height: 474px;
+        margin: 24px 15px;
     }
-/********************* 
-/   Footer Style     /
- ********************/
+    .blog img{
+        width: 300px;
+        height: 248px;
+    }
+    
     .footer{
-        margin: 4% 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .footer-item{
         width: 60%;
-        text-align: center;
     }
+    
+@media screen and (max-width: 992px){
+
 }
